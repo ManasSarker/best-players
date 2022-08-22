@@ -56,7 +56,9 @@
                   />
                   <div class="card-body">
                     <p class="card-text">Vítor Machado</p>
-                    <button class="btn btn-primary px-5">Select</button>
+                    <button id="btn-machado" class="btn btn-primary px-5">
+                      SELECT
+                    </button>
                   </div>
                 </div>
               </div>
@@ -69,7 +71,9 @@
                   />
                   <div class="card-body">
                     <p class="card-text">Neymar Jr</p>
-                    <button class="btn btn-primary px-5">Select</button>
+                    <button id="btn-neymer" class="btn btn-primary px-5">
+                      SELECT
+                    </button>
                   </div>
                 </div>
               </div>
@@ -82,7 +86,9 @@
                   />
                   <div class="card-body">
                     <p class="card-text">Sergio Ramos</p>
-                    <button class="btn btn-primary px-5">Select</button>
+                    <button id="btn-ramos" class="btn btn-primary px-5">
+                      SELECT
+                    </button>
                   </div>
                 </div>
               </div>
@@ -95,7 +101,9 @@
                   />
                   <div class="card-body">
                     <p class="card-text">Kylian Mbappé</p>
-                    <button class="btn btn-primary px-5">Select</button>
+                    <button id="btn-mbappe" class="btn btn-primary px-5">
+                      SELECT
+                    </button>
                   </div>
                 </div>
               </div>
@@ -108,7 +116,9 @@
                   />
                   <div class="card-body">
                     <p class="card-text">Renato Sanches</p>
-                    <button class="btn btn-primary px-5">Select</button>
+                    <button id="btn-renato" class="btn btn-primary px-5">
+                      SELECT
+                    </button>
                   </div>
                 </div>
               </div>
@@ -121,7 +131,9 @@
                   />
                   <div class="card-body text-center">
                     <p class="card-text">Lionel Messi</p>
-                    <button class="btn btn-primary px-5">Select</button>
+                    <button id="btn-messi" class="btn btn-primary px-5">
+                      SELECT
+                    </button>
                   </div>
                 </div>
               </div>
@@ -136,11 +148,7 @@
                 src="images/Ureg-Ureg Marker.png"
                 alt=""
               />
-              <ol>
-                <li>Manas</li>
-                <li>sazzad</li>
-                <li>sojib</li>
-              </ol>
+              <ol id="player-list"></ol>
             </div>
             <div class="budget-section bg-black text-center rounded-3">
               <h3 class="text-center">Per Player</h3>
@@ -151,9 +159,42 @@
               />
               <div class="per-player-budget d-flex justify-content-around m-2">
                 <h6 class="text-white-50">Per Player</h6>
-                <input class="bg-black text-white-50" type="text" />
+                <input
+                  id="per-player-amount"
+                  class="bg-black text-white-50 border-white"
+                  type="text"
+                />
               </div>
-              <button class="btn btn-primary px-5">Calculate</button>
+              <button id="btn-calculate" class="btn btn-primary px-5">
+                Calculate
+              </button>
+              <div class="per-player-budget d-flex justify-content-around m-2">
+                <h6 class="text-white-50">Player Expenses</h6>
+                <h5 id="player-total-expenses" class="text-white-50">$00</h5>
+              </div>
+              <div class="per-player-budget d-flex justify-content-around m-2">
+                <h6 class="text-white-50">Manager</h6>
+                <input
+                  id="manager-amount"
+                  class="bg-black text-white-50 border-white"
+                  type="text"
+                />
+              </div>
+              <div class="per-player-budget d-flex justify-content-around m-2">
+                <h6 class="text-white-50">Coach</h6>
+                <input
+                  id="coach-amount"
+                  class="bg-black text-white-50 border-white"
+                  type="text"
+                />
+              </div>
+              <button id="btn-calculate-total" class="btn btn-primary px-5">
+                Calculate Total
+              </button>
+              <div class="per-player-budget d-flex justify-content-around m-2">
+                <h6 class="text-white-50">Total Cost</h6>
+                <h5 id="total-cost" class="text-danger">$<span>100</span></h5>
+              </div>
             </div>
           </div>
         </div>
@@ -164,5 +205,10 @@
       <hr />
       <h6 class="text-white text-center">copyright by manas</h6>
     </footer>
+    <script src="js/utility.js"></script>
+    <script src="js/players.js"></script>
+    <script src="js/playerCostFunctions.js"></script>
+    <script src="js/totalCost.js"></script>
+    <script src="js/calculateToal.js"></script>
   </body>
 </html>
